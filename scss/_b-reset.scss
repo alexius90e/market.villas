@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  color: $black;
+  font-size: 16px;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background-color: $white;
+  overflow-x: hidden;
+
+  &.active {
+    @include tablet {
+      overflow: hidden;
+    }
+  }
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul {
+  margin: 1rem 0;
+  padding-left: 1.125rem;
+}

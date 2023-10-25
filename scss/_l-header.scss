@@ -1,0 +1,179 @@
+.header {
+  position: relative;
+  padding: 28px 0;
+
+  @include mobile {
+    padding: 16px 0;
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  & .logo {
+    @include mobile {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__location {
+    padding-left: 28px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    background: url(../assets/icons/location.svg) left center no-repeat;
+    background-size: 19px;
+    cursor: pointer;
+  }
+
+  & .nav {
+    @include laptop {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      max-width: 320px;
+      width: 100%;
+      height: calc(100vh - 76px);
+      padding-top: 40px;
+      box-sizing: border-box;
+      background-color: $white100;
+      transform: translate3d(600px, 0, 0);
+      transition: transform linear 0.3s;
+      will-change: transform;
+    }
+
+    @include mobile {
+      max-width: none;
+    }
+
+    &.active {
+      @include laptop {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    &__menu {
+      @include laptop {
+        flex-direction: column;
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+
+    &__submenu {
+      @include laptop {
+        position: static;
+        padding: 16px 0 0 12px;
+        box-shadow: none;
+        background-color: rgba($color: $white, $alpha: 0);
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      &-item {
+        @include laptop {
+          padding: 0;
+          margin-bottom: 16px;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__button {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background-color: $white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    cursor: pointer;
+
+    &_favourites {
+      background-image: url(../assets/icons/heart.svg);
+    }
+
+    &_compare {
+      background-image: url(../assets/icons/layers3d.svg);
+    }
+
+    &_search {
+      background-image: url(../assets/icons/magnifyingglass.svg);
+
+      @include mobile {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+      }
+    }
+
+    &_hamburger {
+      display: none;
+      background-image: url(../assets/icons/hamburger.svg);
+      transition: transform ease-in-out 0.3s;
+      will-change: transform;
+
+      @include laptop {
+        display: inline-block;
+      }
+
+      @include mobile {
+        position: absolute;
+        top: 16px;
+        right: 12px;
+      }
+
+      &.active {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &-badge {
+      position: absolute;
+      left: 10px;
+      bottom: 8px;
+      display: inline-block;
+      padding: 1px 5px;
+      color: $white;
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 12px;
+      text-align: center;
+      border-radius: 40px;
+      background-color: $orange;
+    }
+  }
+}
