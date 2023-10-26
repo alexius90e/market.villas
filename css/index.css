@@ -12,10 +12,12 @@ body {
   position: relative;
   margin: 0;
   background-color: #ffffff;
-  overflow-x: hidden;
 }
 @media (max-width: 768px) {
   body.active {
+    position: fixed;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
   }
 }
@@ -260,8 +262,8 @@ ul {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     background-color: #f2f2f2;
-    -webkit-transform: translate3d(600px, 0, 0);
-            transform: translate3d(600px, 0, 0);
+    -webkit-transform: translate3d(-1000px, 0, 0);
+            transform: translate3d(-1000px, 0, 0);
     -webkit-transition: -webkit-transform linear 0.3s;
     transition: -webkit-transform linear 0.3s;
     transition: transform linear 0.3s;

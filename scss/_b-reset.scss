@@ -13,10 +13,12 @@ body {
   position: relative;
   margin: 0;
   background-color: $white;
-  overflow-x: hidden;
 
   &.active {
     @include tablet {
+      position: fixed;
+      height: 100%;
+      width: 100%;
       overflow: hidden;
     }
   }

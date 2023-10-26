@@ -53,9 +53,9 @@
       padding-top: 40px;
       box-sizing: border-box;
       background-color: $white100;
-      transform: translate3d(600px, 0, 0);
+      transform: translate3d(-1000px, 0, 0);
       transition: transform linear 0.3s;
-      will-change: transform;
+      will-change: transform ;
     }
 
     @include mobile {
@@ -119,6 +119,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
+
     cursor: pointer;
 
     &_favourites {
