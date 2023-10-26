@@ -1,34 +1,55 @@
 .button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 250px;
-  padding: 0;
-  border: none;
-  background: url(../assets/button.svg) center no-repeat;
+  gap: 8px;
+  padding: 17px 20px 16px;
   color: $white;
-  text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
-  transition: $baseTransition;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.45px;
+  border: none;
+  border-radius: 54px;
+  background-color: $black;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+  will-change: transform;
+  transition: transform ease-in-out 0.1s;
   cursor: pointer;
 
-  @include mobile {
-    height: 54px;
-    width: 100%;
-    border-radius: 4px;
-    background: #ff6e20;
+  &::after {
+    content: '';
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &_location {
+    &::after {
+      background-image: url(../assets/icons/location-wh.svg);
+    }
+  }
+
+  &_arrow {
+    &::after {
+      background-image: url(../assets/icons/arrow-up-right-whh.svg);
+    }
+  }
+
+  &_mail {
+    &::after {
+      background-image: url(../assets/icons/envelope-wh.svg);
+    }
   }
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   &:active {
-    transform: scale(0.98);
+    transform: scale(1);
   }
 }
