@@ -1,4 +1,6 @@
 .catalog {
+  padding: 48px 0;
+
   &__title {
     margin: 0 0 8px;
     color: $black;
@@ -31,8 +33,32 @@
     flex-wrap: wrap;
     gap: 30px;
 
-    @include tablet {
+    @include desktop {
+      gap: 30px 10px;
+    }
+
+    @include laptop {
       gap: 24px 10px;
+    }
+
+    & .catalog-card {
+      flex: 1 1 calc(100% / 4 - 30px / 4 * 3);
+      max-width: calc(100% / 4 - 30px / 4 * 3);
+
+      @include desktop {
+        flex: 1 1 calc(100% / 4 - 10px / 4 * 3);
+        max-width: calc(100% / 4 - 10px / 4 * 3);
+      }
+
+      @include laptop {
+        flex: 1 1 calc(100% / 3 - 10px / 3 * 2);
+        max-width: calc(100% / 3 - 10px / 3 * 3);
+      }
+
+      @include tablet {
+        flex: 1 1 calc(100% / 2 - 10px / 2);
+        max-width: calc(100% / 2 - 10px / 2);
+      }
     }
   }
 

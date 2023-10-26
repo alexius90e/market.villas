@@ -1,3 +1,6 @@
+import './catalog.js'
+
+
 const hamburgerBtn = document.querySelector('.header__button_hamburger');
 const headerNav = document.querySelector('.header .nav');
 

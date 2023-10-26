@@ -1,0 +1,288 @@
+.catalog-card {
+  position: relative;
+  max-width: 100%;
+
+  &__slider {
+    position: relative;
+    height: 264px;
+    width: 100%;
+    margin: 0 0 12px;
+    border-radius: 12px;
+
+    @include mobile {
+      height: 168px;
+    }
+
+    & .swiper {
+      height: 100%;
+
+      &-slide {
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 12px;
+          user-select: none;
+        }
+      }
+
+      &-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+
+        &-bullet {
+          width: 6px;
+          height: 6px;
+          margin: 0 !important;
+          background-color: $white;
+        }
+      }
+
+      &-button {
+        &-next,
+        &-prev {
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          border: 1px solid $white200;
+          background-color: $white;
+          background-image: url(../assets/icons/arrow-left.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 13px;
+          box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.12);
+          visibility: hidden;
+          opacity: 0;
+          transition: opacity ease-in-out 0.2s;
+          will-change: opacity;
+
+          @include desktop {
+            width: 32px;
+            height: 32px;
+          }
+
+          @include laptop {
+            display: none;
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &-next {
+          right: -18px;
+          transform: rotate(180deg);
+
+          @include desktop {
+            right: -6px;
+          }
+        }
+
+        &-prev {
+          left: -18px;
+
+          @include desktop {
+            left: -6px;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover .swiper-button-prev,
+  &:hover .swiper-button-next {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 4px;
+
+    &-price {
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+      text-decoration-line: underline;
+
+      @include tablet {
+        font-size: 14px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(../assets/icons/location.svg) center no-repeat;
+
+        @include tablet {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
+  &__location {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    opacity: 0.6;
+
+    @include tablet {
+      font-size: 12px;
+    }
+
+    @include mobile {
+      margin: 0;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include desktop {
+      gap: 8px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: $black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.42px;
+
+    @include desktop {
+      font-size: 12px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 16px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      @include desktop {
+        width: 16px;
+        height: 14px;
+      }
+    }
+
+    &_beds::before {
+      background-image: url(../assets/icons/bed.svg);
+    }
+
+    &_baths::before {
+      background-image: url(../assets/icons/bath.svg);
+    }
+
+    &_area::before {
+      background-image: url(../assets/icons/area.svg);
+    }
+
+    &_age::before {
+      background-image: url(../assets/icons/clock.svg);
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 10;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: $black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    background-color: $white;
+  }
+
+  &__controls {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__control {
+    display: inline-block;
+    height: 18px;
+    width: 16px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: rgba($color: $white, $alpha: 0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transition: transform ease-in-out 0.1s;
+    will-change: transform;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &_compare {
+      background-image: url(../assets/icons/layers3d-wh.svg);
+    }
+
+    &_favourites {
+      background-image: url(../assets/icons/heart-wh.svg);
+    }
+  }
+}

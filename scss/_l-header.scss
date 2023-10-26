@@ -6,6 +6,7 @@
     padding: 16px 0;
   }
 
+
   & .container {
     display: flex;
     align-items: center;
@@ -40,12 +41,21 @@
   }
 
   & .nav {
+    @keyframes showMenu {
+      from {
+        transform: translate3d(0, 120vh, 0);
+      }
+      to {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
     @include laptop {
       position: absolute;
       top: 100%;
       right: 0;
       z-index: 100;
-      display: flex;
+      display: none;
       justify-content: center;
       max-width: 320px;
       width: 100%;
@@ -53,9 +63,8 @@
       padding-top: 40px;
       box-sizing: border-box;
       background-color: $white100;
-      transform: translate3d(-1000px, 0, 0);
       transition: transform linear 0.3s;
-      will-change: transform ;
+      will-change: transform;
     }
 
     @include mobile {
@@ -64,7 +73,9 @@
 
     &.active {
       @include laptop {
-        transform: translate3d(0, 0, 0);
+        display: flex;
+        animation-name: showMenu;
+        animation-duration: 0.3s;
       }
     }
 
