@@ -1,0 +1,90 @@
+.benefits {
+  padding: 80px 0;
+
+  &__title {
+    margin: 0 0 8px;
+    color: $black;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.9px;
+    text-align: center;
+
+    @include tablet {
+      font-size: 28px;
+      letter-spacing: -0.84px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 40px;
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.48px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    @include laptop {
+      gap: 30px 20px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    @include tablet {
+      flex: 0 1 calc(50% - 10px);
+    }
+
+    @include tablet {
+      flex: 0 1 calc(50% - 10px);
+    }
+
+    @include mobile {
+      flex: 0 1 100%;
+    }
+
+    &-image {
+      height: 300px;
+      margin: 0 0 30px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+
+    &-title {
+      margin: 0 0 8px;
+      color: $black;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.6px;
+    }
+
+    &-description {
+      margin: 0;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.48px;
+    }
+  }
+}
