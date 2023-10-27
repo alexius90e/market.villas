@@ -1,4 +1,5 @@
 import './catalog.js';
+import './custom-select.js';
 
 const hamburgerBtn = document.querySelector('.header__button_hamburger');
 const headerNav = document.querySelector('.header .nav');
@@ -19,4 +20,21 @@ headerNavDropdown.forEach((elem) => {
     const submenuElem = event.currentTarget.querySelector('.nav__submenu');
     submenuElem.classList.toggle('active');
   });
+});
+
+const firstScreenForm = document.querySelector('.first-screen__form');
+
+firstScreenForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const form = new FormData(event.currentTarget);
+
+  const typeOfObject = form.get('typeOfObject');
+  const area = form.get('area');
+  const bedrooms = form.get('bedrooms');
+  const price = form.get('price');
+  const more = form.get('more');
+
+  console.log(
+    `typeOfObject: ${typeOfObject} area: ${area} bedrooms: ${bedrooms} price: ${price} more: ${more}`
+  );
 });

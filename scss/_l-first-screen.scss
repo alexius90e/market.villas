@@ -1,0 +1,183 @@
+.first-screen {
+  position: relative;
+  margin-bottom: -30px;
+
+  & .container {
+    max-width: 1512px;
+    padding: 0 8px;
+  }
+
+  &__block {
+    padding: 80px 12px 100px;
+    color: $white;
+    border-radius: 16px;
+    background: url(../assets/first-screen-bg.webp) center no-repeat;
+  }
+
+  &__title {
+    max-width: 680px;
+    margin: 0 auto 20px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 616px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.54px;
+    text-align: center;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 970px;
+    width: calc(100% - 16px);
+    padding: 16px;
+    padding-left: 26px;
+    margin: -30px auto 0;
+    box-sizing: border-box;
+    border: 1px solid var(--stroke, #f0f0f0);
+    border-radius: 137px;
+    background-color: $white;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+
+    @include laptop {
+      gap: 20px;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      border-radius: 25px;
+    }
+
+    @include mobile {
+      gap: 10px;
+      padding: 15px 10px;
+    }
+
+    & .custom-select {
+      flex: 1 1 150px;
+      box-sizing: border-box;
+      padding: 0;
+
+      @include tablet {
+        flex: 1 1 30%;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 10px;
+        background-color: $white200;
+      }
+
+      @include mobile {
+        flex: 0 1 calc(50% - 8px);
+        padding: 8px;
+      }
+
+     
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: rgba($color: $black, $alpha: 0.2);
+        transform: translateY(-50%);
+
+        @include laptop {
+          right: -10px;
+        }
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      & .select-selected {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        padding-right: 10px;
+
+        & span {
+          max-width: calc(100% - 24px);
+          width: 100%;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      & .select-item {
+        padding: 8px 16px;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &-search {
+      flex: 0 0 auto;
+      display: inline-block;
+      height: 39px;
+      width: 39px;
+      padding: 0;
+      border: none;
+      border-radius: 39px;
+      background-color: $orange;
+      background-image: url(../assets/icons/magnifyingglass-wh.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 16px;
+      cursor: pointer;
+
+      @include tablet {
+        flex: 1 1 30%;
+        width: auto;
+        height: auto;
+        padding: 10px 12px;
+        padding-right: 40px;
+        border-radius: 10px;
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: left;
+        background-position: right 16px center;
+      }
+
+      @include mobile {
+        flex: 0 1 calc(50% - 8px);
+        padding: 10px 8px;
+      }
+
+
+      & span {
+        display: none;
+
+        @include tablet {
+          display: inline;
+        }
+      }
+    }
+  }
+}
