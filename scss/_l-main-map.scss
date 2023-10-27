@@ -1,3 +1,207 @@
 .main-map {
-  display: none;
+  padding: 60px 0 0;
+
+  @include tablet {
+    margin-bottom: -20px;
+  }
+
+
+  & .container {
+    position: relative;
+    max-width: 1512px;
+    padding: 0 8px;
+  }
+
+  &__map {
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white100;
+    
+    @include tablet {
+      height: 400px;
+    }
+
+    @include mobile {
+      height: 266px;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 400px;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 13px;
+    background-color: $white;
+    box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%);
+
+    @include tablet {
+      position: static;
+      width: 100%;
+      transform: translateY(-20px);
+    }
+
+    &-title {
+      margin: 0 0 4px;
+      color: $black;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.72px;
+    }
+
+    &-description {
+      margin: 0 0 20px;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: -0.48px;
+    }
+
+    &-input {
+      margin: 0 0 20px;
+
+      & input {
+        display: inline-block;
+        width: 100%;
+        padding: 13px 15px;
+        gap: 10px;
+        box-sizing: border-box;
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        border: none;
+        border-radius: 16px;
+        outline-color: rgba($color: $black, $alpha: 0.05);
+        background-color: $white200;
+      }
+    }
+
+    &-result {
+      margin: 0 0 30px;
+      padding-right: 8px;
+      max-height: 290px;
+      overflow: auto;
+
+      @include mobile {
+        padding-right: 0;
+      }
+
+      &::-webkit-scrollbar {
+        @media (min-width: 992px) {
+          width: 4px;
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        @media (min-width: 992px) {
+          border-radius: 4px;
+          background: $white200;
+        }
+      }
+
+      &::-webkit-scrollbar-thumb {
+        @media (min-width: 992px) {
+          background: rgba($color: $black, $alpha: 0.25);
+        }
+      }
+
+      & .catalog-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        padding-left: 96px;
+        margin: 0 0 24px;
+
+        @include mobile {
+          padding-left: 90px;
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: calc(100% + 11px);
+          left: 0;
+          right: 0;
+          display: block;
+          height: 1px;
+          width: 100%;
+          background-color: $white200;
+        }
+
+        &:last-child::after {
+          display: none;
+        }
+
+        &__slider {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+
+          width: 80px;
+          height: 80px;
+
+          & .swiper {
+            &-button {
+              &-next,
+              &-prev {
+                display: none;
+              }
+            }
+          }
+        }
+
+
+        &__info {
+          &-link {
+            text-decoration: none;
+          }
+        }
+
+        &__location {
+          flex: 1 0 auto;
+        }
+
+        &__icons {
+          @include mobile {
+            gap: 8px;
+          }
+        }
+
+        &__icon {
+          @include mobile {
+            display: flex;
+            gap: 2px;
+          }
+        }
+
+        &__label {
+          display: none;
+        }
+
+        &__controls {
+          position: absolute;
+          top: 10px;
+          left: 52px;
+          width: max-content;
+        }
+      }
+    }
+  }
 }
