@@ -1,6 +1,10 @@
 .nav {
   position: relative;
 
+  @include laptop {
+    overflow-y: auto;
+  }
+
   &__menu {
     display: flex;
     gap: 20px;
@@ -12,10 +16,37 @@
       position: relative;
       width: max-content;
 
+      @include laptop {
+        width: 100%;
+      }
+
       &_dropdown {
         padding-right: 14px;
         background: url(../assets/icons/dropdown.svg) right center no-repeat;
         background-size: 8px;
+
+        @include laptop {
+          position: relative;
+          display: block;
+          padding-right: 0;
+          background: none;
+        }
+      }
+    }
+
+    &-button-dropdown {
+      display: none;
+
+      @include laptop {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 19px;
+        width: 19px;
+        padding: 0;
+        border: none;
+        background: url(../assets/icons/dropdown.svg) center no-repeat;
       }
     }
 
@@ -41,6 +72,12 @@
     border-radius: 12px;
     box-shadow: 0 0 16px rgba($color: $black, $alpha: 0.15);
     background-color: $white;
+
+    &.active {
+      @include laptop {
+        display: block !important;
+      }
+    }
 
     &::before {
       content: '';
@@ -77,5 +114,9 @@
 
   &__menu-item:hover &__submenu {
     display: block;
+
+    @include laptop {
+      display: none;
+    }
   }
 }
