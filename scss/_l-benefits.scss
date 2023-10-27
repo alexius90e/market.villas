@@ -32,6 +32,10 @@
     display: flex;
     gap: 40px;
 
+    @include desktop {
+      gap: 30px;
+    }
+
     @include laptop {
       gap: 30px 20px;
     }
@@ -43,10 +47,6 @@
   }
 
   &__card {
-    @include tablet {
-      flex: 0 1 calc(50% - 10px);
-    }
-
     @include tablet {
       flex: 0 1 calc(50% - 10px);
     }
