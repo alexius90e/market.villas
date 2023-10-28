@@ -1,0 +1,55 @@
+.sorting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__selects {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include mobile {
+      flex: 1 1 100%;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $grey900;
+    }
+  }
+
+  &__sidebar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include mobile {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &-link {
+      color: $black;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.42px;
+      text-decoration-line: underline;
+
+      &_active {
+        color: $grey900;
+      }
+    }
+  }
+}
