@@ -20,6 +20,35 @@
       margin-bottom: 10px;
       border-bottom: 1px solid $grey900;
     }
+
+    & .custom-select {
+      & .select-selected {
+        padding: 0 14px 0 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.42px;
+      }
+
+      & .select-items {
+        top: calc(100% + 4px);
+      }
+
+      &:last-child .select-items {
+        @include tablet {
+          right: 0;
+          left: auto;
+        }
+      }
+
+      & .select-item {
+        padding: 6px 14px;
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 
   &__sidebar {
