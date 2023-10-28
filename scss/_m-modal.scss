@@ -1,0 +1,171 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  display: none;
+  padding: 10px;
+  background-color: rgba($color: $black, $alpha: 0.45);
+
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    position: relative;
+    max-height: 90vh;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 45px;
+    overflow: auto;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: $white;
+
+    @include tablet {
+      padding: 14px 15px;
+      border-radius: 20px;
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50px;
+    background-color: $white200;
+    background-image: url(../assets/icons/xmark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+
+    @include tablet {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 8px;
+    color: $black;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.72px;
+  }
+
+  &__description {
+    margin: 0 0 30px;
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__form {
+  }
+
+  &__fieldset {
+    margin: 0 0 20px;
+    padding: 0;
+    border: none;
+
+    @include tablet {
+      margin: 0 0 10px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &_inputs {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include tablet {
+        gap: 10px;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+    }
+
+    &_submit {
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 26px;
+
+      @include tablet {
+        padding-top: 15px;
+      }
+
+      & .button {
+        flex: 0 0 auto;
+      }
+    }
+  }
+
+  &__input {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 16px;
+    color: $black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.42;
+    outline-color: rgba($color: $black, $alpha: 0.05);
+    background-color: $white200;
+  }
+
+  &__fieldset_inputs &__input {
+    flex: 1 1 auto;
+  }
+
+  &__textarea {
+    display: inline-block;
+    height: 81px;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 16px;
+    color: $black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.42;
+    outline-color: rgba($color: $black, $alpha: 0.05);
+    background-color: $white200;
+    resize: vertical;
+  }
+
+  &__link {
+    color: rgba($color: $black, $alpha: 0.6);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    text-decoration-line: underline;
+  }
+}

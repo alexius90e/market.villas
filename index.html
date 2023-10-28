@@ -1112,7 +1112,7 @@
                 <p class="contact-us__description">Contact us for individual selection</p>
               </div>
 
-              <button class="button button_arrow">Get the Request</button>
+              <button class="button button_arrow get-request">Get the Request</button>
             </div>
           </div>
         </div>
@@ -1472,7 +1472,7 @@
                 </li>
 
                 <li class="footer__menu-list-item footer__menu-list-item_buttons">
-                  <button class="button button_arrow">Get the Request</button>
+                  <button class="button button_arrow get-request">Get the Request</button>
                 </li>
               </ul>
             </div>
@@ -1489,5 +1489,58 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="getRequestModal">
+      <div class="modal__content">
+        <div class="modal__body">
+          <h2 class="modal__title">Didn’t find yours?</h2>
+          <p class="modal__description">Contact us for individual selection</p>
+
+          <form class="modal__form">
+            <fieldset class="modal__fieldset modal__fieldset_inputs">
+              <input
+                class="modal__input"
+                type="text"
+                name="name"
+                id="requestName"
+                placeholder="Your name"
+              />
+              <input
+                class="modal__input"
+                type="tel"
+                name="phone"
+                id="requestPhone"
+                placeholder="Your phone"
+              />
+              <input
+                class="modal__input"
+                type="text"
+                name="email"
+                id="requestEmailv"
+                placeholder="Your email"
+              />
+            </fieldset>
+
+            <fieldset class="modal__fieldset">
+              <textarea
+                class="modal__textarea"
+                name="comment"
+                id="requestComment"
+                placeholder="Your comment/message"
+              ></textarea>
+            </fieldset>
+
+            <fieldset class="modal__fieldset modal__fieldset_submit">
+              <button class="button button_no-icon">Send request</button>
+              <a class="modal__link" href="#">
+                By leaving a request, you accept the terms of the security policy
+              </a>
+            </fieldset>
+          </form>
+        </div>
+
+        <button class="modal__button-close"></button>
+      </div>
+    </div>
   </body>
 </html>

@@ -3,7 +3,7 @@
   align-items: center;
   gap: 8px;
   width: max-content;
-  padding: 17px 20px 16px;
+  padding: 16px 20px;
   color: $white;
   font-size: 15px;
   font-style: normal;
@@ -26,6 +26,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+  }
+
+  &_no-icon {
+    &::after {
+      display: none;
+    }
   }
 
   &_location {

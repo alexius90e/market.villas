@@ -65,7 +65,7 @@ ul {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding: 17px 20px 16px;
+  padding: 16px 20px;
   color: #ffffff;
   font-size: 15px;
   font-style: normal;
@@ -92,6 +92,9 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.button_no-icon::after {
+  display: none;
 }
 .button_location::after {
   background-image: url(../assets/icons/location-wh.svg);
@@ -663,6 +666,191 @@ ul {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  display: none;
+  padding: 10px;
+  background-color: rgba(29, 29, 29, 0.45);
+}
+.modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__content {
+  position: relative;
+  max-height: 90vh;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px 45px;
+  overflow: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 14px 15px;
+    border-radius: 20px;
+  }
+}
+.modal__button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  background-image: url(../assets/icons/xmark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .modal__button-close {
+    height: 30px;
+    width: 30px;
+  }
+}
+.modal__title {
+  margin: 0 0 8px;
+  color: #1d1d1d;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+.modal__description {
+  margin: 0 0 30px;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.modal__fieldset {
+  margin: 0 0 20px;
+  padding: 0;
+  border: none;
+}
+@media (max-width: 768px) {
+  .modal__fieldset {
+    margin: 0 0 10px;
+  }
+}
+.modal__fieldset:last-child {
+  margin: 0;
+}
+.modal__fieldset_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .modal__fieldset_inputs {
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .modal__fieldset_inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.modal__fieldset_submit {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 26px;
+}
+@media (max-width: 768px) {
+  .modal__fieldset_submit {
+    padding-top: 15px;
+  }
+}
+.modal__fieldset_submit .button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.modal__input {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 16px;
+  color: #1d1d1d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42;
+  outline-color: rgba(29, 29, 29, 0.05);
+  background-color: #f0f0f0;
+}
+.modal__fieldset_inputs .modal__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.modal__textarea {
+  display: inline-block;
+  height: 81px;
+  width: 100%;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 16px;
+  color: #1d1d1d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42;
+  outline-color: rgba(29, 29, 29, 0.05);
+  background-color: #f0f0f0;
+  resize: vertical;
+}
+.modal__link {
+  color: rgba(29, 29, 29, 0.6);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  text-decoration-line: underline;
 }
 
 .header {
