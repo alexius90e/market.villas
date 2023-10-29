@@ -1,0 +1,100 @@
+.developer-card {
+  &__logo {
+    margin: 0 0 12px;
+    padding: 20px 0;
+    border-radius: 12px;
+    text-align: center;
+    background: $white200;
+
+    & img {
+      height: 48px;
+      width: auto;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 4px;
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+
+    &_sub {
+      margin: 0 0 12px;
+      color: $black;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.42px;
+      opacity: 0.6;
+    }
+
+    &-location {
+      color: $black;
+      text-decoration-line: underline;
+    }
+  }
+
+  &__benefits {
+    margin: 0 0 32px;
+    padding: 10px 0 0;
+    list-style-type: none;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 9px;
+      padding: 5px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+      color: $black;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.42px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      &-title {
+        flex: 0 1 180px;
+      }
+
+      &-value {
+        flex: 1 1 auto;
+      }
+    }
+  }
+
+  &__link {
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+      text-decoration-line: underline;
+
+      &::before {
+        content: '';
+        display: block;
+        height: 19px;
+        width: 19px;
+        background: url(../assets/icons/location.svg) center no-repeat;
+        background-size: 16px;
+      }
+    }
+  }
+}

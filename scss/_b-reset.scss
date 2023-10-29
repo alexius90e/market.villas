@@ -22,6 +22,16 @@ body {
       overflow: hidden;
     }
   }
+
+  ::-moz-selection {
+    color: $white;
+    background: $orange;
+  }
+
+  ::selection {
+    color: $white;
+    background: $orange;
+  }
 }
 
 a,

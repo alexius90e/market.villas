@@ -6,24 +6,26 @@
 
 // Modules
 
-@import './m-container';
-@import './m-button';
-@import './m-logo';
-@import './m-nav';
-@import './m-catalog-card';
-@import './m-custom-select';
-@import './m-page-top';
 @import './m-breadcrumbs';
+@import './m-button';
+@import './m-catalog-card';
+@import './m-container';
+@import './m-custom-select';
+@import './m-developer-card';
+@import './m-logo';
+@import './m-modal';
+@import './m-nav';
 @import './m-pagination';
 @import './m-sorting';
-@import './m-modal';
 
 // Layouts
 
 @import './l-header';
 @import './l-main';
+@import './l-page-top';
 @import './l-first-screen';
 @import './l-catalog';
+@import './l-product';
 @import './l-locations';
 @import './l-contact-us';
 @import './l-main-map';
