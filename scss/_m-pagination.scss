@@ -18,10 +18,20 @@
     background-repeat: no-repeat;
     background-size: 15px;
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+    transition: $baseTransition;
+    will-change: transform;
 
     @include mobile {
       width: 44px;
       height: 44px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(1);
     }
 
     &_prev {
@@ -51,10 +61,20 @@
       height: 41px;
       border-radius: 50px;
       background: $white200;
+      transition: $baseTransition;
+      will-change: transform;
 
       @include mobile {
         width: 32px;
         height: 32px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(1);
       }
 
       &_active {

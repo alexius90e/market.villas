@@ -56,20 +56,31 @@ customSelects.forEach((customSelect) => {
 
   selectSelected.addEventListener('click', function (e) {
     e.stopPropagation();
+    const isOpened = !selectItems.classList.contains('select-hide');
     closeAllSelect();
-    selectOverlay.classList.toggle('select-hide');
-    selectItems.classList.toggle('select-hide');
+    if (isOpened) {
+      selectOverlay.classList.add('select-hide');
+      selectItems.classList.add('select-hide');
+    } else {
+      selectOverlay.classList.remove('select-hide');
+      selectItems.classList.remove('select-hide');
+    }
   });
 });
 
 function closeAllSelect() {
-  const selectOverlayElements = document.querySelectorAll('.select-overlay');
-  const selectItemsElements = document.querySelectorAll('.select-items');
-  const selectSelectedElements = document.querySelectorAll('.select-selected');
+  customSelects.forEach((customSelect) => {
+    const selectOverlayElement = customSelect.querySelector('.select-overlay');
+    const selectItemElement = customSelect.querySelector('.select-items');
+    const selectSelectedElement = customSelect.querySelector('.select-selected');
+    const isOpened = !selectItemElement.classList.contains('select-hide');
 
-  selectSelectedElements.forEach((element) => element.classList.remove('select-arrow-active'));
-  selectItemsElements.forEach((element) => element.classList.add('select-hide'));
-  selectOverlayElements.forEach((element) => element.classList.add('select-hide'));
+    if (isOpened) {
+      selectSelectedElement.classList.remove('select-arrow-active');
+      selectItemElement.classList.add('select-hide');
+      selectOverlayElement.classList.add('select-hide');
+    }
+  });
 }
 
 document.addEventListener('click', closeAllSelect);

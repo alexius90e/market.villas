@@ -1,6 +1,6 @@
 .first-screen {
   position: relative;
-  margin-bottom: -30px;
+  margin-bottom: 0px;
 
   & .container {
     max-width: 1512px;
@@ -15,13 +15,14 @@
   }
 
   &__title {
-    max-width: 680px;
+    max-width: 632px;
     margin: 0 auto 20px;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-align: center;
+    letter-spacing: -1.44px;
   }
 
   &__description {
@@ -116,7 +117,7 @@
         padding-right: 10px;
 
         & span {
-          max-width: calc(100% - 24px);
+          max-width: calc(100% - 8px);
           width: 100%;
           display: inline-block;
           overflow: hidden;

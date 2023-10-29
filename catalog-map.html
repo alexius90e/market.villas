@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market.Villas</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"
+      defer
+    ></script>
+    <script type="module" src="./js/index.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="./">Market<span>.</span>Villas</a>
+        </div>
+
+        <div class="header__location">Ubud</div>
+
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu-item nav__menu-item_dropdown">
+              <a href="#">Buy</a>
+              <button class="nav__menu-button-dropdown"></button>
+
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__menu-item">
+              <a href="#">Developers</a>
+            </li>
+
+            <li class="nav__menu-item">
+              <a href="#">Buyers Guide</a>
+            </li>
+
+            <li class="nav__menu-item nav__menu-item_dropdown">
+              <a href="#">Services</a>
+              <button class="nav__menu-button-dropdown"></button>
+
+              <ul class="nav__submenu">
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a href="">Lorem ipsum </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav__menu-item">
+              <a href="#">About us</a>
+            </li>
+
+            <li class="nav-menu-item">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__buttons">
+          <a class="header__button header__button_favourites" href="#">
+            <span class="header__button-badge">2</span>
+          </a>
+
+          <a class="header__button header__button_compare" href="#">
+            <span class="header__button-badge">1</span>
+          </a>
+
+          <button class="header__button header__button_search"></button>
+
+          <button class="header__button header__button_hamburger"></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="page-top">
+        <div class="container">
+          <div class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="./">Home</a></li>
+              <li class="breadcrumbs__item"><a href="./">Catalog</a></li>
+              <li class="breadcrumbs__item"><a href="./">Ubud</a></li>
+              <li class="breadcrumbs__item active">Perfect view</li>
+            </ol>
+          </div>
+
+          <h2 class="page-top__title">Perfect View Villas</h2>
+
+          <form class="first-screen__form">
+            <fieldset class="custom-select" data-value="1">
+              <select
+                class="form-select"
+                id="typeOfObjectSelect"
+                name="typeOfObject"
+                placeholder="Type of object"
+              >
+                <option value="1">All</option>
+                <option value="2">Type one</option>
+                <option value="3">Type two</option>
+                <option value="4">Type three</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="custom-select" data-value="1">
+              <select class="form-select" id="areaSelect" name="area" placeholder="Area">
+                <option value="1">All</option>
+                <option value="2">Area one</option>
+                <option value="3">Area two</option>
+                <option value="4">Area three</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="custom-select" data-value="1">
+              <select
+                class="form-select"
+                id="bedroomsSelect"
+                name="bedrooms"
+                placeholder="Bedrooms"
+              >
+                <option value="1">All</option>
+                <option value="2">One bedroom</option>
+                <option value="3">Two bedroom</option>
+                <option value="4">Three bedroom</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="custom-select" data-value="1">
+              <select class="form-select" id="priceSelect" name="price" placeholder="Price">
+                <option value="1">All</option>
+                <option value="2">Price one</option>
+                <option value="3">Price two</option>
+                <option value="4">Price three</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="custom-select" data-value="1">
+              <select class="form-select" id="moreSelect" name="more" placeholder="More">
+                <option value="1">All</option>
+                <option value="2">More one</option>
+                <option value="3">More two</option>
+                <option value="4">More three</option>
+              </select>
+            </fieldset>
+
+            <button class="first-screen__form-search"><span>Find</span></button>
+          </form>
+
+          <div class="sorting">
+            <div class="sorting__selects">
+              <div class="custom-select" data-value="1">
+                <select
+                  class="form-select"
+                  id="sortByPrice"
+                  name="sortByPrice"
+                  placeholder="Sort by price"
+                >
+                  <option value="1">Low to High</option>
+                  <option value="2">High to Low</option>
+                </select>
+              </div>
+
+              <div class="custom-select" data-value="1">
+                <select
+                  class="form-select"
+                  id="sortByRate"
+                  name="sortByRate"
+                  placeholder="Sort by rate"
+                >
+                  <option value="1">Low to High</option>
+                  <option value="2">High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sorting__sidebar">
+              <div class="sorting__catalog">
+                <a class="sorting__catalog-link sorting__catalog-link_active" href="./catalog.html">
+                  Cards View
+                </a>
+                <a class="sorting__catalog-link" href="./catalog-map.html"> Map View </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-map main-map_catalog">
+        <div class="container">
+          <div class="main-map__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18766.5056837016!2d115.18525312001897!3d-8.579470893076936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1698400631707!5m2!1sru!2sby"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="main-map__advertisements">
+            <h3 class="main-map__advertisements-title">
+              <span class="main-map__advertisements-title-text">2 advertisements</span>
+              <button class="main-map__advertisements-close"></button>
+            </h3>
+
+            <div class="main-map__advertisements-result">
+              <div class="catalog-card">
+                <div class="catalog-card__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="catalog-card__info">
+                  <span class="catalog-card__info-price">$ 359.000</span>
+                  <a class="catalog-card__info-link" href="#">On map</a>
+                </div>
+
+                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+                <div class="catalog-card__icons">
+                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+                </div>
+
+                <div class="catalog-card__label">Ready now</div>
+
+                <div class="catalog-card__controls">
+                  <button class="catalog-card__control catalog-card__control_compare"></button>
+                  <button class="catalog-card__control catalog-card__control_favourites"></button>
+                </div>
+              </div>
+
+              <div class="catalog-card">
+                <div class="catalog-card__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="catalog-card__info">
+                  <span class="catalog-card__info-price">$ 359.000</span>
+                  <a class="catalog-card__info-link" href="#">On map</a>
+                </div>
+
+                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+                <div class="catalog-card__icons">
+                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+                </div>
+
+                <div class="catalog-card__label">Ready now</div>
+
+                <div class="catalog-card__controls">
+                  <button class="catalog-card__control catalog-card__control_compare"></button>
+                  <button class="catalog-card__control catalog-card__control_favourites"></button>
+                </div>
+              </div>
+
+              <div class="catalog-card">
+                <div class="catalog-card__slider">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="catalog-card__info">
+                  <span class="catalog-card__info-price">$ 359.000</span>
+                  <a class="catalog-card__info-link" href="#">On map</a>
+                </div>
+
+                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+                <div class="catalog-card__icons">
+                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+                </div>
+
+                <div class="catalog-card__label">Ready now</div>
+
+                <div class="catalog-card__controls">
+                  <button class="catalog-card__control catalog-card__control_compare"></button>
+                  <button class="catalog-card__control catalog-card__control_favourites"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__block">
+            <figure class="contact-us__image">
+              <img src="./assets/locations/loaction-1-min.webp" alt="" />
+            </figure>
+
+            <div class="contact-us__content">
+              <div class="contact-us__text">
+                <h2 class="contact-us__title">Didn’t find yours?</h2>
+                <p class="contact-us__description">Contact us for individual selection</p>
+              </div>
+
+              <button class="button button_arrow get-request">Get the Request</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__title">Main Benefits</h2>
+          <p class="benefits__description">Contact us for individual selection</p>
+
+          <div class="benefits__list">
+            <div class="benefits__card">
+              <figure class="benefits__card-image">
+                <img src="./assets/benefits/benefit-1.webp" alt="benefits" />
+              </figure>
+
+              <h3 class="benefits__card-title">Feature One</h3>
+
+              <p class="benefits__card-description">
+                Lorem ipsum dolor sit amet consectetur. Turpis mauris faucibus nunc volutpat
+                facilisis.
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <figure class="benefits__card-image">
+                <img src="./assets/benefits/benefit-2.webp" alt="benefits" />
+              </figure>
+
+              <h3 class="benefits__card-title">Feature Two</h3>
+
+              <p class="benefits__card-description">
+                Lorem ipsum dolor sit amet consectetur. Turpis mauris faucibus nunc volutpat
+                facilisis.
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <figure class="benefits__card-image">
+                <img src="./assets/benefits/benefit-3.webp" alt="benefits" />
+              </figure>
+
+              <h3 class="benefits__card-title">Feature Three</h3>
+
+              <p class="benefits__card-description">
+                Lorem ipsum dolor sit amet consectetur. Turpis mauris faucibus nunc volutpat
+                facilisis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="logo">
+            <a href="./">Market<span>.</span>Villas</a>
+          </div>
+
+          <div class="footer__location">Ubud</div>
+
+          <nav class="nav">
+            <ul class="nav__menu">
+              <li class="nav__menu-item nav__menu-item_dropdown">
+                <a href="#">Buy</a>
+
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__menu-item">
+                <a href="#">Developers</a>
+              </li>
+
+              <li class="nav__menu-item">
+                <a href="#">Buyers Guide</a>
+              </li>
+
+              <li class="nav__menu-item nav__menu-item_dropdown">
+                <a href="#">Services</a>
+
+                <ul class="nav__submenu">
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                  <li class="nav__submenu-item">
+                    <a href="">Lorem ipsum </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__menu-item">
+                <a href="#">About us</a>
+              </li>
+
+              <li class="nav-menu-item">
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="footer__buttons">
+            <a class="footer__button footer__button_favourites" href="#"> </a>
+            <a class="footer__button footer__button_compare" href="#"> </a>
+            <button class="footer__button footer__button_search"></button>
+          </div>
+        </div>
+
+        <div class="footer__menu">
+          <div class="footer__menu-catalog">
+            <div class="footer__menu-item">
+              <h4 class="footer__menu-title">By type</h4>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-list-item"><a href="#">Apartment</a></li>
+                <li class="footer__menu-list-item"><a href="#">Townhouse</a></li>
+                <li class="footer__menu-list-item"><a href="#">Loft</a></li>
+                <li class="footer__menu-list-item"><a href="#">Luxury villa</a></li>
+                <li class="footer__menu-list-item"><a href="#">Best View</a></li>
+                <li class="footer__menu-list-item"><a href="#">Close to ocean</a></li>
+                <li class="footer__menu-list-item"><a href="#">No Traffic jams</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__menu-item">
+              <h4 class="footer__menu-title">By bedrooms</h4>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-list-item"><a href="#">1 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">2 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">3 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">4 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">5 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">Villa</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__menu-item">
+              <h4 class="footer__menu-title">By Price</h4>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-list-item"><a href="#">1 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">2 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">3 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">4 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">5 BDR villas</a></li>
+                <li class="footer__menu-list-item"><a href="#">Villa</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__menu-social">
+            <div class="footer__menu-item">
+              <h4 class="footer__menu-title">Contacts</h4>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">
+                  <a href="tel:84991123231">8 499 112 32 31</a>
+                </li>
+                <li class="footer__menu-list-item">
+                  <a href="tel:84991123231">8 499 112 32 31</a>
+                </li>
+                <li class="footer__menu-list-item">
+                  <a href="mailto:hello@market.villas">hello@market.villas</a>
+                </li>
+                <li class="footer__menu-list-item">Working time 9 AM - 9 PM</li>
+              </ul>
+            </div>
+
+            <div class="footer__menu-item">
+              <h4 class="footer__menu-title">Subscribe</h4>
+
+              <ul class="footer__menu-list">
+                <li class="footer__menu-list-item">Our socials</li>
+                <li class="footer__menu-list-item footer__menu-list-item_social">
+                  <a
+                    class="footer__menu-social-btn footer__menu-social-btn_ytb"
+                    href="https://www.youtube.com/"
+                  ></a>
+                  <a
+                    class="footer__menu-social-btn footer__menu-social-btn_vk"
+                    href="https://www.vk.com/"
+                  ></a>
+                </li>
+
+                <li class="footer__menu-list-item footer__menu-list-item_buttons">
+                  <button class="button button_arrow get-request">Get the Request</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__copyrights">
+          <div class="footer__copyrights-text">© 2014—2022 Market.Villas</div>
+
+          <div class="footer__copyrights-links">
+            <a href="" class="footer__copyrights-link">All Rights Reserved</a>
+            <a href="" class="footer__copyrights-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="getRequestModal">
+      <div class="modal__content">
+        <div class="modal__body">
+          <h2 class="modal__title">Didn’t find yours?</h2>
+          <p class="modal__description">Contact us for individual selection</p>
+
+          <form class="modal__form">
+            <fieldset class="modal__fieldset modal__fieldset_inputs">
+              <input
+                class="modal__input"
+                type="text"
+                name="name"
+                id="requestName"
+                placeholder="Your name"
+              />
+              <input
+                class="modal__input"
+                type="tel"
+                name="phone"
+                id="requestPhone"
+                placeholder="Your phone"
+              />
+              <input
+                class="modal__input"
+                type="text"
+                name="email"
+                id="requestEmailv"
+                placeholder="Your email"
+              />
+            </fieldset>
+
+            <fieldset class="modal__fieldset">
+              <textarea
+                class="modal__textarea"
+                name="comment"
+                id="requestComment"
+                placeholder="Your comment/message"
+              ></textarea>
+            </fieldset>
+
+            <fieldset class="modal__fieldset modal__fieldset_submit">
+              <button class="button button_no-icon">Send request</button>
+              <a class="modal__link" href="#">
+                By leaving a request, you accept the terms of the security policy
+              </a>
+            </fieldset>
+          </form>
+        </div>
+
+        <button class="modal__button-close"></button>
+      </div>
+    </div>
+  </body>
+</html>
