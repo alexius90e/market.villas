@@ -2488,7 +2488,7 @@ ul {
   line-height: normal;
   letter-spacing: -0.36px;
 }
-.locations__card-tags {
+.locations__card-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2498,20 +2498,22 @@ ul {
   margin: 0 0 24px;
 }
 @media (max-width: 768px) {
-  .locations__card-tags {
+  .locations__card-links {
     display: none;
   }
 }
-.locations__card-tag {
+.locations__card-link {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  color: #ffffff;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.42px;
   text-decoration-line: underline;
+  opacity: 0.7;
 }
 .locations__card-price {
   margin: 0 0 12px;
@@ -2521,7 +2523,7 @@ ul {
   line-height: normal;
   letter-spacing: -0.48px;
 }
-.locations__card-link {
+.locations__card-see-all-link {
   color: #ffffff;
   font-size: 16px;
   font-style: normal;

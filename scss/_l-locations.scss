@@ -97,7 +97,7 @@
       }
     }
 
-    &-tags {
+    &-links {
       display: flex;
       flex-wrap: wrap;
       gap: 4px 10px;
@@ -108,14 +108,16 @@
       }
     }
 
-    &-tag {
+    &-link {
       flex: 0 0 auto;
+      color: $white;
       font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: -0.42px;
       text-decoration-line: underline;
+      opacity: 0.7;
     }
 
     &-price {
@@ -127,7 +129,7 @@
       letter-spacing: -0.48px;
     }
 
-    &-link {
+    &-see-all-link {
       color: $white;
       font-size: 16px;
       font-style: normal;
