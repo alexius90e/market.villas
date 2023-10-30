@@ -21,6 +21,12 @@
       border-bottom: 1px solid $grey900;
     }
 
+    &:last-child {
+      @include mobile {
+        border-bottom: none;
+      }
+    }
+
     & .custom-select {
       & .select-selected {
         padding: 0 14px 0 0;

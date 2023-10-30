@@ -1,0 +1,46 @@
+.developers {
+  padding: 40px 0 80px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 30px;
+
+    @include tablet {
+      gap: 62px 20px;
+    }
+
+    & .developer-card {
+      flex: 0 1 calc(100% / 3 - 30px / 3 * 2);
+
+      @include laptop {
+        flex: 0 1 calc(100% / 2 - 30px / 2);
+      }
+
+      @include tablet {
+        flex: 0 1 calc(100% / 2 - 20px / 2);
+      }
+
+      @include mobile {
+        position: relative;
+        flex: 1 1 100%;
+      }
+
+      &::after {
+        display: none;
+
+        @include mobile {
+          content: '';
+          position: absolute;
+          top: calc(100% + 32px);
+          left: 0;
+          right: 0;
+          display: block;
+          height: 1px;
+          width: 100%;
+          background-color: rgba($color: $black, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}

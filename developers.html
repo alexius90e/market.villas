@@ -103,79 +103,18 @@
     <main class="main">
       <section class="page-top">
         <div class="container">
-          <div class="breadcrumbs">
-            <ol class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a href="./">Home</a></li>
-              <li class="breadcrumbs__item"><a href="./">Catalog</a></li>
-              <li class="breadcrumbs__item"><a href="./">Ubud</a></li>
-              <li class="breadcrumbs__item active">Perfect view</li>
-            </ol>
-          </div>
-
-          <h2 class="page-top__title">Perfect View Villas</h2>
-
-          <form class="first-screen__form">
-            <fieldset class="custom-select" data-value="1">
-              <select
-                class="form-select"
-                id="typeOfObjectSelect"
-                name="typeOfObject"
-                placeholder="Type of object"
-              >
-                <option value="1">All</option>
-                <option value="2">Type one</option>
-                <option value="3">Type two</option>
-                <option value="4">Type three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select class="form-select" id="areaSelect" name="area" placeholder="Area">
-                <option value="1">All</option>
-                <option value="2">Area one</option>
-                <option value="3">Area two</option>
-                <option value="4">Area three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select
-                class="form-select"
-                id="bedroomsSelect"
-                name="bedrooms"
-                placeholder="Bedrooms"
-              >
-                <option value="1">All</option>
-                <option value="2">One bedroom</option>
-                <option value="3">Two bedroom</option>
-                <option value="4">Three bedroom</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select class="form-select" id="priceSelect" name="price" placeholder="Price">
-                <option value="1">All</option>
-                <option value="2">Price one</option>
-                <option value="3">Price two</option>
-                <option value="4">Price three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="first-screen__more">
-              <button class="first-screen__more-button other-filter-button">More</button>
-            </fieldset>
-
-            <button class="first-screen__form-search"><span>Find</span></button>
-          </form>
+          <h2 class="page-top__title">
+            <div class="page-top__title-text">Developers</div>
+          </h2>
 
           <div class="sorting">
             <div class="sorting__selects">
               <div class="custom-select" data-value="1">
                 <select
                   class="form-select"
-                  id="sortByPrice"
-                  name="sortByPrice"
-                  placeholder="Sort by price"
+                  id="sortByAmount"
+                  name="sortByAmount"
+                  placeholder="Sort by amount of buildings"
                 >
                   <option value="1">Low to High</option>
                   <option value="2">High to Low</option>
@@ -185,215 +124,253 @@
               <div class="custom-select" data-value="1">
                 <select
                   class="form-select"
-                  id="sortByRate"
-                  name="sortByRate"
-                  placeholder="Sort by rate"
+                  id="SortByOld"
+                  name="SortByOld"
+                  placeholder="Sort by old"
                 >
                   <option value="1">Low to High</option>
                   <option value="2">High to Low</option>
                 </select>
               </div>
             </div>
-
-            <div class="sorting__sidebar">
-              <div class="sorting__catalog">
-                <a class="sorting__catalog-link sorting__catalog-link_active" href="./catalog.html">
-                  Cards View
-                </a>
-                <a class="sorting__catalog-link" href="./catalog-map.html"> Map View </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
-      <section class="main-map main-map_catalog">
+      <section class="developers">
         <div class="container">
-          <div class="main-map__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18766.5056837016!2d115.18525312001897!3d-8.579470893076936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1698400631707!5m2!1sru!2sby"
-              width="100%"
-              height="100%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
+          <div class="developers__list">
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/attentive.svg" alt="developer" />
+              </figure>
 
-          <div class="main-map__advertisements">
-            <h3 class="main-map__advertisements-title">
-              <span class="main-map__advertisements-title-text">2 advertisements</span>
-              <button class="main-map__advertisements-close"></button>
-            </h3>
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
 
-            <div class="main-map__advertisements-result">
-              <div class="catalog-card">
-                <div class="catalog-card__slider">
-                  <div class="swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                      </div>
-                    </div>
-                  </div>
+              <h4 class="developer-card__title_sub">Short benefits</h4>
 
-                  <div class="swiper-pagination"></div>
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
 
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                </div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
 
-                <div class="catalog-card__info">
-                  <span class="catalog-card__info-price">$ 359.000</span>
-                  <a
-                    class="catalog-card__info-link"
-                    href="./product.html#productMap"
-                    target="_blank"
-                  >
-                    On map
-                  </a>
-                </div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
 
-                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
 
-                <div class="catalog-card__icons">
-                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-                </div>
-
-                <div class="catalog-card__label">Ready now</div>
-
-                <div class="catalog-card__controls">
-                  <button
-                    class="catalog-card__control catalog-card__control_compare"
-                    title="add to compare"
-                  ></button>
-                  <button
-                    class="catalog-card__control catalog-card__control_favourites"
-                    title="add to wishlist"
-                  ></button>
-                </div>
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
               </div>
+            </div>
 
-              <div class="catalog-card">
-                <div class="catalog-card__slider">
-                  <div class="swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                      </div>
-                    </div>
-                  </div>
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/booking.svg" alt="developer" />
+              </figure>
 
-                  <div class="swiper-pagination"></div>
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
 
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                </div>
+              <h4 class="developer-card__title_sub">Short benefits</h4>
 
-                <div class="catalog-card__info">
-                  <span class="catalog-card__info-price">$ 359.000</span>
-                  <a
-                    class="catalog-card__info-link"
-                    href="./product.html#productMap"
-                    target="_blank"
-                  >
-                    On map
-                  </a>
-                </div>
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
 
-                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
 
-                <div class="catalog-card__icons">
-                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-                </div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
 
-                <div class="catalog-card__label">Ready now</div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
 
-                <div class="catalog-card__controls">
-                  <button
-                    class="catalog-card__control catalog-card__control_compare"
-                    title="add to compare"
-                  ></button>
-                  <button
-                    class="catalog-card__control catalog-card__control_favourites"
-                    title="add to wishlist"
-                  ></button>
-                </div>
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
               </div>
+            </div>
 
-              <div class="catalog-card">
-                <div class="catalog-card__slider">
-                  <div class="swiper">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                      </div>
-                      <div class="swiper-slide">
-                        <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                      </div>
-                    </div>
-                  </div>
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/classpass.svg" alt="developer" />
+              </figure>
 
-                  <div class="swiper-pagination"></div>
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
 
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-                </div>
+              <h4 class="developer-card__title_sub">Short benefits</h4>
 
-                <div class="catalog-card__info">
-                  <span class="catalog-card__info-price">$ 359.000</span>
-                  <a
-                    class="catalog-card__info-link"
-                    href="./product.html#productMap"
-                    target="_blank"
-                  >
-                    On map
-                  </a>
-                </div>
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
 
-                <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
 
-                <div class="catalog-card__icons">
-                  <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                  <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                  <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-                </div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
 
-                <div class="catalog-card__label">Ready now</div>
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
 
-                <div class="catalog-card__controls">
-                  <button
-                    class="catalog-card__control catalog-card__control_compare"
-                    title="add to compare"
-                  ></button>
-                  <button
-                    class="catalog-card__control catalog-card__control_favourites"
-                    title="add to wishlist"
-                  ></button>
-                </div>
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
+              </div>
+            </div>
+
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/squarespace.svg" alt="developer" />
+              </figure>
+
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
+
+              <h4 class="developer-card__title_sub">Short benefits</h4>
+
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
+
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
+              </div>
+            </div>
+
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/gumroad.svg" alt="developer" />
+              </figure>
+
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
+
+              <h4 class="developer-card__title_sub">Short benefits</h4>
+
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
+
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
+              </div>
+            </div>
+
+            <div class="developer-card">
+              <figure class="developer-card__logo">
+                <img src="./assets/developers/outreach.svg" alt="developer" />
+              </figure>
+
+              <h3 class="developer-card__title">
+                <span class="developer-card__title-name">Attentive</span>
+                <a class="developer-card__title-location" href="#">UAE</a>
+              </h3>
+
+              <h4 class="developer-card__title_sub">Short benefits</h4>
+
+              <ul class="developer-card__benefits">
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Year of foundation</div>
+                  <div class="developer-card__benefits-item-value">2020</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Buildings</div>
+                  <div class="developer-card__benefits-item-value">5</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Objects</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+
+                <li class="developer-card__benefits-item">
+                  <div class="developer-card__benefits-item-title">Awards</div>
+                  <div class="developer-card__benefits-item-value">3</div>
+                </li>
+              </ul>
+
+              <div class="developer-card__link">
+                <a href="./developer-page.html">View all Developer's objects</a>
               </div>
             </div>
           </div>
