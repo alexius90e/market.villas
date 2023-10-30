@@ -27,16 +27,17 @@ const firstScreenForms = document.querySelectorAll('.first-screen__form');
 firstScreenForms.forEach((firstScreenForm) => {
   firstScreenForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (event.submitter.matches('.first-screen__more-button')) return;
+
     const form = new FormData(event.currentTarget);
 
     const typeOfObject = form.get('typeOfObject');
     const area = form.get('area');
     const bedrooms = form.get('bedrooms');
     const price = form.get('price');
-    const more = form.get('more');
 
     console.log(
-      `typeOfObject: ${typeOfObject} area: ${area} bedrooms: ${bedrooms} price: ${price} more: ${more}`
+      `typeOfObject: ${typeOfObject} area: ${area} bedrooms: ${bedrooms} price: ${price} `
     );
   });
 });
