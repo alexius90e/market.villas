@@ -2,6 +2,7 @@ import './catalog.js';
 import './custom-select.js';
 import './modal.js';
 import './search.js';
+import './compare.js';
 
 const hamburgerBtn = document.querySelector('.header__button_hamburger');
 const headerNav = document.querySelector('.header .nav');
