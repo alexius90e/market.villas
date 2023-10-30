@@ -1,0 +1,112 @@
+.developer-info {
+  padding: 30px 0 0;
+
+  &__logo {
+    position: relative;
+    margin: 0 0 20px;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 12px;
+    background-color: $white200;
+
+    &-image {
+      height: 48px;
+      width: auto;
+    }
+
+    &-label {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: inline-block;
+      padding: 4px 8px;
+      color: $black;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.36px;
+      border-radius: 4px;
+      background-color: $white;
+    }
+  }
+
+  &__facilities {
+    margin: 0 0 50px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px 12px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &-item {
+      flex: 1 1 15%;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      @include laptop {
+        flex: 1 1 30%;
+      }
+
+      @include mobile {
+        flex: 1 1 45%;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: 19px;
+        width: 19px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+      }
+
+      &_age::before {
+        background-image: url(../assets/icons/clock.svg);
+      }
+
+      &_baths::before {
+        background-image: url(../assets/icons/bath.svg);
+      }
+
+      &_beds::before {
+        background-image: url(../assets/icons/bed.svg);
+      }
+
+      &_area::before {
+        background-image: url(../assets/icons/area.svg);
+      }
+    }
+  }
+
+  &__about {
+    &-title {
+      margin: 0 0 16px;
+      color: $black;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.9px;
+    }
+
+    &-text {
+      max-width: 700px;
+      margin: 0;
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 180%;
+      letter-spacing: -0.48px;
+    }
+  }
+}
