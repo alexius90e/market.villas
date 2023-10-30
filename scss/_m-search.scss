@@ -1,0 +1,127 @@
+.search {
+  margin-bottom: 16px;
+
+  &__form {
+    position: relative;
+
+    &-input {
+      display: inline-block;
+      width: 100%;
+      padding: 26px;
+      padding-right: 214px;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.48px;
+      border-radius: 140px;
+      border: 1px solid $white100;
+      outline-color: rgba($color: $orange, $alpha: 0.75);
+      background-color: $white;
+      box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+
+      @include tablet {
+        padding: 22px 26px;
+        padding-right: 110px;
+      }
+
+      &::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+        height: 16px;
+        width: 16px;
+        background: url(../assets/icons/xmark.svg) center no-repeat;
+        background-size: 12px;
+        cursor: pointer;
+      }
+    }
+
+    &-buttons {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      border: none;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    &-submit {
+      display: inline-block;
+      height: 41px;
+      width: 41px;
+      border: none;
+      border-radius: 40px;
+      background-color: $orange;
+      background-image: url(../assets/icons/magnifyingglass-wh.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 16px;
+    }
+
+    &-add-filters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      padding: 11px 20px;
+      color: $black;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.45px;
+      border: none;
+      border-radius: 50px;
+
+      @include tablet {
+        padding: 11px;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        height: 19px;
+        width: 19px;
+        background: url(../assets/icons/bolt.svg) center no-repeat;
+        background-size: 12px;
+      }
+
+      & span {
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+
+    &-submit,
+    &-add-filters {
+      will-change: transform;
+      transition: transform ease-in-out 0.1s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      &:active {
+        transform: scale(1);
+      }
+    }
+  }
+
+  &__results {
+    margin: 16px 0 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    text-align: center;
+    opacity: 0.5;
+  }
+}
