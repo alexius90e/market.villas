@@ -33,8 +33,8 @@
 
     &-text {
       & em {
-       font-style: normal;
-       color: $grey900;
+        font-style: normal;
+        color: $grey900;
       }
     }
 
@@ -42,10 +42,24 @@
       flex: 0 0 auto;
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 8px;
 
       @include laptop {
         margin: 20px 0 0;
+      }
+
+      &-link {
+        color: $black;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.42px;
+        text-decoration-line: underline;
+
+        &_active {
+          color: $grey900;
+        }
       }
     }
 

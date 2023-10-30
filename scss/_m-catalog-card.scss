@@ -286,4 +286,32 @@
       background-image: url(../assets/icons/heart-wh.svg);
     }
   }
+
+  &__buttons {
+    padding: 22px 0 0;
+
+    @include mobile {
+      padding: 16px 0 0;
+    }
+
+    & .button {
+      padding: 12px 14px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.42px;
+
+      @include mobile {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      &::after {
+        height: 16px;
+        width: 16px;
+        background-size: 10px;
+      }
+    }
+  }
 }

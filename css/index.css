@@ -470,6 +470,33 @@ ul {
 .catalog-card__control_favourites {
   background-image: url(../assets/icons/heart-wh.svg);
 }
+.catalog-card__buttons {
+  padding: 22px 0 0;
+}
+@media (max-width: 576px) {
+  .catalog-card__buttons {
+    padding: 16px 0 0;
+  }
+}
+.catalog-card__buttons .button {
+  padding: 12px 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.42px;
+}
+@media (max-width: 576px) {
+  .catalog-card__buttons .button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+.catalog-card__buttons .button::after {
+  height: 16px;
+  width: 16px;
+  background-size: 10px;
+}
 
 .container {
   max-width: 1170px;
@@ -3259,12 +3286,24 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 @media (max-width: 992px) {
   .page-top__title-buttons {
     margin: 20px 0 0;
   }
+}
+.page-top__title-buttons-link {
+  color: #1d1d1d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  text-decoration-line: underline;
+}
+.page-top__title-buttons-link_active {
+  color: #b9b9b9;
 }
 .page-top__title-button {
   display: -webkit-box;
@@ -3824,4 +3863,64 @@ ul {
   line-height: normal;
   letter-spacing: -0.48px;
   text-decoration-line: underline;
+}
+
+.send-request__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+  padding: 30px 60px;
+  border-radius: 16px;
+  border: 1px solid #f2f2f2;
+  background-image: #ffffff;
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 992px) {
+  .send-request__block {
+    gap: 30px;
+    padding: 30px 24px;
+  }
+}
+@media (max-width: 768px) {
+  .send-request__block {
+    display: block;
+    padding: 30px 16px;
+  }
+}
+.send-request__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+@media (max-width: 768px) {
+  .send-request__text {
+    margin: 0 0 32px;
+  }
+}
+.send-request__title {
+  margin: 0 0 8px;
+  color: #1d1d1d;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+.send-request__title span {
+  color: #b9b9b9;
+}
+.send-request__description {
+  max-width: 258px;
+  margin: 0;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.48px;
 }
