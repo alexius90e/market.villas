@@ -106,112 +106,76 @@
           <div class="breadcrumbs">
             <ol class="breadcrumbs__list">
               <li class="breadcrumbs__item"><a href="./">Home</a></li>
-              <li class="breadcrumbs__item"><a href="./">Catalog</a></li>
-              <li class="breadcrumbs__item"><a href="./">Ubud</a></li>
-              <li class="breadcrumbs__item active">Perfect view</li>
+              <li class="breadcrumbs__item"><a href="./developers.html">Developers</a></li>
+              <li class="breadcrumbs__item active">Attentive</li>
             </ol>
           </div>
 
-          <h2 class="page-top__title">Perfect View Villas</h2>
-
-          <form class="first-screen__form">
-            <fieldset class="custom-select" data-value="1">
-              <select
-                class="form-select"
-                id="typeOfObjectSelect"
-                name="typeOfObject"
-                placeholder="Type of object"
-              >
-                <option value="1">All</option>
-                <option value="2">Type one</option>
-                <option value="3">Type two</option>
-                <option value="4">Type three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select class="form-select" id="areaSelect" name="area" placeholder="Area">
-                <option value="1">All</option>
-                <option value="2">Area one</option>
-                <option value="3">Area two</option>
-                <option value="4">Area three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select
-                class="form-select"
-                id="bedroomsSelect"
-                name="bedrooms"
-                placeholder="Bedrooms"
-              >
-                <option value="1">All</option>
-                <option value="2">One bedroom</option>
-                <option value="3">Two bedroom</option>
-                <option value="4">Three bedroom</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="custom-select" data-value="1">
-              <select class="form-select" id="priceSelect" name="price" placeholder="Price">
-                <option value="1">All</option>
-                <option value="2">Price one</option>
-                <option value="3">Price two</option>
-                <option value="4">Price three</option>
-              </select>
-            </fieldset>
-
-            <fieldset class="first-screen__more">
-              <button class="first-screen__more-button other-filter-button">More</button>
-            </fieldset>
-
-            <button class="first-screen__form-search"><span>Find</span></button>
-          </form>
-
-          <div class="sorting">
-            <div class="sorting__selects">
-              <div class="custom-select" data-value="1">
-                <select
-                  class="form-select"
-                  id="sortByPrice"
-                  name="sortByPrice"
-                  placeholder="Sort by price"
-                >
-                  <option value="1">Low to High</option>
-                  <option value="2">High to Low</option>
-                </select>
-              </div>
-
-              <div class="custom-select" data-value="1">
-                <select
-                  class="form-select"
-                  id="sortByRate"
-                  name="sortByRate"
-                  placeholder="Sort by rate"
-                >
-                  <option value="1">Low to High</option>
-                  <option value="2">High to Low</option>
-                </select>
-              </div>
+          <h2 class="page-top__title">
+            <div class="page-top__title-text"><em>Developer:</em> Attentive</div>
+            <div class="page-top__title-buttons">
+              <button class="page-top__title-button page-top__title-button_favorites">
+                Add to Wishlist
+              </button>
             </div>
-
-            <div class="sorting__sidebar">
-              <div class="sorting__catalog">
-                <a class="sorting__catalog-link" href="./catalog.html"> Cards View </a>
-                <a
-                  class="sorting__catalog-link sorting__catalog-link_active"
-                  href="./catalog-map.html"
-                >
-                  Map View
-                </a>
-              </div>
-            </div>
-          </div>
+          </h2>
         </div>
       </section>
 
+      <div class="developer-info">
+        <div class="container">
+          <figure class="developer-info__logo">
+            <img
+              class="developer-info__logo-image"
+              src="./assets/developers/attentive.svg"
+              alt="attentive"
+            />
+
+            <span class="developer-info__logo-label">Best choice</span>
+          </figure>
+
+          <div class="developer-info__facilities">
+            <ul class="developer-info__facilities-list">
+              <li class="developer-info__facilities-item developer-info__facilities-item_age">
+                23 years
+              </li>
+              <li class="developer-info__facilities-item developer-info__facilities-item_baths">
+                3
+              </li>
+              <li class="developer-info__facilities-item developer-info__facilities-item_beds">
+                3
+              </li>
+              <li class="developer-info__facilities-item developer-info__facilities-item_area">
+                290 sqm
+              </li>
+              <li class="developer-info__facilities-item developer-info__facilities-item_area">
+                290 sqm
+              </li>
+              <li class="developer-info__facilities-item developer-info__facilities-item_area">
+                290 sqm
+              </li>
+            </ul>
+          </div>
+
+          <div class="developer-info__about">
+            <h3 class="developer-info__about-title">About</h3>
+
+            <p class="developer-info__about-text">
+              Experience the epitome of tropical living in our fully furnished 2-bedroom villa in
+              the heart of Canggu. This enchanting retreat boasts a private pool where you can
+              unwind and soak up the sun. With modern amenities and stylish interiors, this urban
+              chic oasis provides the perfect balance of comfort and luxury. Immerse yourself in the
+              vibrant atmosphere.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <section class="catalog">
         <div class="container">
+          <h2 class="catalog__title">Developer’s Properties</h2>
+          <p class="catalog__description">Lorem ipsum dolor sit amet consectetur.</p>
+
           <div class="catalog__list">
             <div class="catalog-card">
               <div class="catalog-card__slider">
@@ -254,7 +218,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -303,7 +270,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -352,399 +322,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
                 <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
                 ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
-                <button
-                  class="catalog-card__control catalog-card__control_favourites"
-                  title="add to wishlist"
-                ></button>
-              </div>
-            </div>
-
-            <div class="catalog-card">
-              <div class="catalog-card__slider">
-                <div class="swiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-
-              <div class="catalog-card__info">
-                <span class="catalog-card__info-price">$ 359.000</span>
-                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
-                  On map
-                </a>
-              </div>
-
-              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
-
-              <div class="catalog-card__icons">
-                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
-                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
-                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
-                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
-              </div>
-
-              <div class="catalog-card__label">Ready now</div>
-
-              <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -793,7 +374,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -842,7 +426,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -891,7 +478,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -940,7 +530,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -989,7 +582,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -1038,7 +634,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -1087,7 +686,114 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -1136,7 +842,322 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-1.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-2.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
+                <button
+                  class="catalog-card__control catalog-card__control_favourites"
+                  title="add to wishlist"
+                ></button>
+              </div>
+            </div>
+
+            <div class="catalog-card">
+              <div class="catalog-card__slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-3.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-4.webp" alt="catalog" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./assets/catalog/catalog-5.webp" alt="catalog" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+              <div class="catalog-card__info">
+                <span class="catalog-card__info-price">$ 359.000</span>
+                <a class="catalog-card__info-link" href="./product.html#productMap" target="_blank">
+                  On map
+                </a>
+              </div>
+
+              <div class="catalog-card__location">3 BDR Villa | Ubud | Leasehold</div>
+
+              <div class="catalog-card__icons">
+                <div class="catalog-card__icon catalog-card__icon_beds">3</div>
+                <div class="catalog-card__icon catalog-card__icon_baths">3</div>
+                <div class="catalog-card__icon catalog-card__icon_area">290 sqm</div>
+                <div class="catalog-card__icon catalog-card__icon_age">23 years</div>
+              </div>
+
+              <div class="catalog-card__label">Ready now</div>
+
+              <div class="catalog-card__controls">
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -1185,7 +1206,10 @@
               <div class="catalog-card__label">Ready now</div>
 
               <div class="catalog-card__controls">
-                <button class="catalog-card__control catalog-card__control_compare" title="add to compare"></button>
+                <button
+                  class="catalog-card__control catalog-card__control_compare"
+                  title="add to compare"
+                ></button>
                 <button
                   class="catalog-card__control catalog-card__control_favourites"
                   title="add to wishlist"
@@ -1222,6 +1246,10 @@
                 <a class="pagination__page-link" href="#"></a>
               </div>
             </div>
+          </div>
+
+          <div class="catalog__buttons">
+            <a class="button button_location" href="./catalog.html">Show all</a>
           </div>
         </div>
       </section>
@@ -1362,9 +1390,9 @@
           </nav>
 
           <div class="footer__buttons">
-            <a class="footer__button footer__button_favourites" href="./favorites.html"> </a>
-            <a class="footer__button footer__button_compare" href="./compare.html"> </a>
-            <a class="footer__button footer__button_search" href="./search.html"></a>
+            <a class="footer__button footer__button_favourites" href="#"> </a>
+            <a class="footer__button footer__button_compare" href="#"> </a>
+            <button class="footer__button footer__button_search"></button>
           </div>
         </div>
 
