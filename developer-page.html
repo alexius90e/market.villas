@@ -1548,47 +1548,119 @@
     <div class="modal" id="otherFiltersModal">
       <div class="modal__content">
         <div class="modal__body">
-          <h2 class="modal__title">Other filters</h2>
+          <h2 class="modal__title modal__title_filter">Other filters</h2>
 
-          <form class="modal__form">
-            <fieldset class="modal__fieldset modal__fieldset_inputs">
-              <input
-                class="modal__input"
-                type="text"
-                name="name"
-                id="requestName"
-                placeholder="Your name"
-              />
-              <input
-                class="modal__input"
-                type="tel"
-                name="phone"
-                id="requestPhone"
-                placeholder="Your phone"
-              />
-              <input
-                class="modal__input"
-                type="text"
-                name="email"
-                id="requestEmailv"
-                placeholder="Your email"
-              />
-            </fieldset>
+          <form class="modal__form modal__form_filter">
+            <h4 class="modal__fieldset-title">Checkbox filters</h4>
 
             <fieldset class="modal__fieldset">
-              <textarea
-                class="modal__textarea"
-                name="comment"
-                id="requestComment"
-                placeholder="Your comment/message"
-              ></textarea>
+              <label class="modal__checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+                <span>First</span>
+              </label>
+
+              <label class="modal__checkbox">
+                <input type="checkbox" checked />
+                <span class="checkmark"></span>
+                <span>Second</span>
+              </label>
+
+              <label class="modal__checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+                <span>Third</span>
+              </label>
+            </fieldset>
+
+            <h4 class="modal__fieldset-title">Range filters</h4>
+
+            <fieldset class="modal__fieldset">
+              <div class="double-range-slider">
+                <div class="double-range-slider__labels">
+                  <input
+                    class="double-range-slider__label double-range-slider__label_lower"
+                    type="number"
+                    placeholder="From"
+                  />
+                  <input
+                    class="double-range-slider__label double-range-slider__label_upper"
+                    type="number"
+                    placeholder="To"
+                  />
+                </div>
+                <div class="double-range-slider__inputs">
+                  <input
+                    class="double-range-slider__input double-range-slider__input_lower"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
+                  <input
+                    class="double-range-slider__input double-range-slider__input_upper"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="100"
+                    step="1"
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <h4 class="modal__fieldset-title">Select filters</h4>
+
+            <fieldset class="modal__fieldset">
+              <div class="checkbox-group">
+                <label class="checkbox-group__item">
+                  <input type="checkbox" name="firstOption" />
+                  <span class="checkbox-group__item-text">First option</span>
+                </label>
+
+                <label class="checkbox-group__item">
+                  <input type="checkbox" name="secondOption" />
+                  <span class="checkbox-group__item-text">Second option</span>
+                </label>
+
+                <label class="checkbox-group__item">
+                  <input type="checkbox" name="thirdOption" checked />
+                  <span class="checkbox-group__item-text">Third option</span>
+                </label>
+
+                <label class="checkbox-group__item">
+                  <input type="checkbox" name="fourthOption" checked />
+                  <span class="checkbox-group__item-text">Fourth option</span>
+                </label>
+
+                <label class="checkbox-group__item">
+                  <input type="checkbox" name="fifthOption" />
+                  <span class="checkbox-group__item-text">Fifth option</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <h4 class="modal__fieldset-title">Dropdown filters</h4>
+
+            <fieldset class="modal__fieldset">
+              <fieldset class="custom-select" data-value="1">
+                <select
+                  class="form-select"
+                  id="pickAnOption"
+                  name="pickAnOption"
+                  placeholder="Pick an option"
+                >
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+              </fieldset>
             </fieldset>
 
             <fieldset class="modal__fieldset modal__fieldset_submit">
               <button class="button button_no-icon">Show results</button>
-              <a class="modal__link" href="#">
-                By leaving a request, you accept the terms of the security policy
-              </a>
+              <button class="button modal__button-reset">Reset filters</button>
             </fieldset>
           </form>
         </div>

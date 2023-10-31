@@ -131,6 +131,14 @@
     }
   }
 
+  &__form_filter &__fieldset {
+    margin: 20px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__form_filter &__fieldset_submit {
     display: flex;
     align-items: center;

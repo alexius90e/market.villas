@@ -1007,6 +1007,12 @@ ul {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
 }
+.modal__form_filter .modal__fieldset {
+  margin: 20px 0;
+}
+.modal__form_filter .modal__fieldset:last-child {
+  margin-bottom: 0;
+}
 .modal__form_filter .modal__fieldset_submit {
   display: -webkit-box;
   display: -ms-flexbox;
