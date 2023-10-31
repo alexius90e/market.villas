@@ -7,8 +7,12 @@
   }
 
   &__label {
-    flex: 1 1 auto;
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    width: 120px;
+    display: block;
     padding: 14px 15px;
+    box-sizing: border-box;
     border: none;
     border-radius: 16px;
     outline-color: rgba($color: $orange, $alpha: 0.5);
@@ -34,11 +38,10 @@
   &__input {
     position: absolute;
     z-index: 2;
-    box-sizing: border-box;
-    appearance: none;
     width: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     overflow: hidden;
     border: 0;
     border-radius: 1px;
@@ -46,6 +49,7 @@
     background-size: 100% 2px;
     outline: none;
     pointer-events: none;
+    appearance: none;
 
     &:active,
     &:focus {
