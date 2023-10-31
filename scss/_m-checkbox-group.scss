@@ -1,0 +1,39 @@
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &__item {
+    position: relative;
+    width: fit-content;
+    color: $black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    user-select: none;
+    cursor: pointer;
+
+    & input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    &-text {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background-color: $white200;
+    }
+
+    & input:checked ~ &-text {
+      color: $white;
+      background-color: $orange;
+    }
+  }
+}

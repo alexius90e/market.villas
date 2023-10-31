@@ -19,6 +19,10 @@ getRequestButtons.forEach((button) => {
 
 otherFiltersModal.addEventListener('submit', (event) => {
   event.preventDefault();
+  if (event.submitter.matches('.button.modal__button-reset')) {
+    event.target.reset();
+    return;
+  }
   event.currentTarget.classList.remove('active');
 });
 
