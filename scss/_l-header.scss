@@ -6,7 +6,6 @@
     padding: 16px 0;
   }
 
-
   & .container {
     display: flex;
     align-items: center;
@@ -29,15 +28,28 @@
   }
 
   &__location {
-    padding-left: 28px;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: -0.48px;
-    background: url(../assets/icons/location.svg) left center no-repeat;
-    background-size: 19px;
-    cursor: pointer;
+
+    & .custom-select {
+      & .select-selected {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-right: 20px;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 19px;
+          height: 19px;
+          background: url(../assets/icons/location.svg) left center no-repeat;
+          background-size: 19px;
+        }
+      }
+    }
   }
 
   & .nav {

@@ -22,7 +22,16 @@
           <a href="./">Market<span>.</span>Villas</a>
         </div>
 
-        <div class="header__location">Ubud</div>
+        <div class="header__location">
+          <div class="custom-select" data-value="en">
+            <select class="form-select" id="language" name="language">
+              <option value="en">EN</option>
+              <option value="de">DE</option>
+              <option value="eu">RU</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+        </div>
 
         <nav class="nav">
           <ul class="nav__menu">
@@ -85,15 +94,19 @@
         </nav>
 
         <div class="header__buttons">
-          <a class="header__button header__button_favourites" href="./favorites.html">
+          <a
+            class="header__button header__button_favourites"
+            href="./favorites.html"
+            title="Favourites"
+          >
             <span class="header__button-badge">2</span>
           </a>
 
-          <a class="header__button header__button_compare" href="./compare.html">
+          <a class="header__button header__button_compare" href="./compare.html" title="Compare">
             <span class="header__button-badge">1</span>
           </a>
 
-          <a class="header__button header__button_search" href="./search.html"></a>
+          <a class="header__button header__button_search" href="./search.html" title="Search"></a>
 
           <button class="header__button header__button_hamburger"></button>
         </div>
