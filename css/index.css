@@ -182,6 +182,11 @@ ul {
   height: 100%;
   border-radius: 12px;
 }
+.catalog-card__slider .swiper-slide a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .catalog-card__slider .swiper-slide img {
   width: 100%;
   height: 100%;
