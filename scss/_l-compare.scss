@@ -102,6 +102,33 @@
         border-radius: 12px;
         object-fit: cover;
       }
+
+      &-label {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+        display: inline-block;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        border-radius: 4px;
+        background-color: $white;
+      }
+    }
+
+    &-close {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      border: none;
+      background: url(../assets/icons/xmark-wh.svg) center no-repeat;
+      cursor: pointer;
     }
 
     &-list {

@@ -247,6 +247,12 @@
     line-height: normal;
     letter-spacing: -0.36px;
     background-color: $white;
+
+    &_favorites {
+      @include mobile {
+        display: none;
+      }
+    }
   }
 
   &__controls {
@@ -284,6 +290,11 @@
 
     &_favourites {
       background-image: url(../assets/icons/heart-wh.svg);
+    }
+
+    &_delete {
+      background-image: url(../assets/icons/xmark-wh.svg);
+      background-size: 14px;
     }
   }
 

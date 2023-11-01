@@ -428,6 +428,11 @@ ul {
   letter-spacing: -0.36px;
   background-color: #ffffff;
 }
+@media (max-width: 576px) {
+  .catalog-card__label_favorites {
+    display: none;
+  }
+}
 .catalog-card__controls {
   position: absolute;
   top: 16px;
@@ -469,6 +474,10 @@ ul {
 }
 .catalog-card__control_favourites {
   background-image: url(../assets/icons/heart-wh.svg);
+}
+.catalog-card__control_delete {
+  background-image: url(../assets/icons/xmark-wh.svg);
+  background-size: 14px;
 }
 .catalog-card__buttons {
   padding: 22px 0 0;
@@ -2017,6 +2026,31 @@ ul {
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.compare__card-image-label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.compare__card-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url(../assets/icons/xmark-wh.svg) center no-repeat;
+  cursor: pointer;
 }
 .compare__card-list {
   margin: 0;
