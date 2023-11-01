@@ -32,6 +32,7 @@
   }
 
   &__facilities {
+    display: none;
     margin: 0 0 50px;
 
     &-list {
@@ -83,6 +84,47 @@
 
       &_area::before {
         background-image: url(../assets/icons/area.svg);
+      }
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 0 50px;
+
+    @include tablet {
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+
+      @include mobile {
+        flex: 0 1 100%;
+        justify-content: space-between;
+      }
+
+      &-text {
+        width: min-content;
+      }
+
+      &-number {
+        color: $black;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.84px;
+
+        @include mobile {
+          flex: 0 0 120px;
+          min-width: 120px;
+        }
       }
     }
   }
