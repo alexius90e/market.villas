@@ -23,23 +23,11 @@
       margin-bottom: 20px;
       padding-bottom: 20px;
     }
-
-    @include mobile {
-      flex-wrap: wrap;
-    }
   }
 
-  & .logo {
-    @include mobile {
-      flex: 1 1 100%;
-      display: flex;
-      justify-content: center;
-      padding-bottom: 20px;
-      border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
-    }
-  }
 
   &__location {
+    display: none;
     padding-left: 28px;
     font-size: 16px;
     font-style: normal;
