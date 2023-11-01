@@ -335,6 +335,9 @@ ul {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.42px;
+}
+.catalog-card__location a {
+  color: #1d1d1d;
   opacity: 0.6;
 }
 @media (max-width: 768px) {
