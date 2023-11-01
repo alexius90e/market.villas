@@ -312,7 +312,7 @@
         width: 19px;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 16px;
+        background-size: contain;
       }
 
       &_age::before {
@@ -329,6 +329,46 @@
 
       &_area::before {
         background-image: url(../assets/icons/area.svg);
+      }
+
+      &_internet::before {
+        background-image: url(../assets/icons/wifi.svg);
+      }
+
+      &_pool::before {
+        background-image: url(../assets/icons/pool.svg);
+      }
+
+      &_tv::before {
+        background-image: url(../assets/icons/tv.svg);
+      }
+
+      &_conditioner::before {
+        background-image: url(../assets/icons/conditioner.svg);
+      }
+
+      &_washing-machine::before {
+        background-image: url(../assets/icons/washer.svg);
+      }
+
+      &_kitchen::before {
+        background-image: url(../assets/icons/refrigerator.svg);
+      }
+
+      &_parking::before {
+        background-image: url(../assets/icons/car.fill.svg);
+      }
+
+      &_dining::before {
+        background-image: url(../assets/icons/cup.and.saucer.fill.svg);
+      }
+
+      &_gym::before {
+        background-image: url(../assets/icons/dumbbell.fill.svg);
+      }
+
+      &_security::before {
+        background-image: url(../assets/icons/lock.shield.svg);
       }
     }
   }

@@ -4698,7 +4698,7 @@ ul {
   width: 19px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 16px;
+  background-size: contain;
 }
 .product__facilities-item_age::before {
   background-image: url(../assets/icons/clock.svg);
@@ -4711,6 +4711,36 @@ ul {
 }
 .product__facilities-item_area::before {
   background-image: url(../assets/icons/area.svg);
+}
+.product__facilities-item_internet::before {
+  background-image: url(../assets/icons/wifi.svg);
+}
+.product__facilities-item_pool::before {
+  background-image: url(../assets/icons/pool.svg);
+}
+.product__facilities-item_tv::before {
+  background-image: url(../assets/icons/tv.svg);
+}
+.product__facilities-item_conditioner::before {
+  background-image: url(../assets/icons/conditioner.svg);
+}
+.product__facilities-item_washing-machine::before {
+  background-image: url(../assets/icons/washer.svg);
+}
+.product__facilities-item_kitchen::before {
+  background-image: url(../assets/icons/refrigerator.svg);
+}
+.product__facilities-item_parking::before {
+  background-image: url(../assets/icons/car.fill.svg);
+}
+.product__facilities-item_dining::before {
+  background-image: url(../assets/icons/cup.and.saucer.fill.svg);
+}
+.product__facilities-item_gym::before {
+  background-image: url(../assets/icons/dumbbell.fill.svg);
+}
+.product__facilities-item_security::before {
+  background-image: url(../assets/icons/lock.shield.svg);
 }
 .product__about-text {
   margin: 0 0 6px;
