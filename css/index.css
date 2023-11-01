@@ -2246,7 +2246,7 @@ ul {
   letter-spacing: -0.9px;
 }
 .content-page__title_main {
-  margin: 0 0 12px;
+  margin: 70px 0 12px;
   font-size: 42px;
   font-style: normal;
   font-weight: 600;
@@ -3370,14 +3370,16 @@ ul {
           align-items: center;
   gap: 6px;
   padding-right: 20px;
+  font-size: 14px;
+  line-height: 16px;
 }
 .header__location .custom-select .select-selected::before {
   content: "";
   display: block;
   width: 19px;
   height: 19px;
-  background: url(../assets/icons/location.svg) left center no-repeat;
-  background-size: 19px;
+  background: url(../assets/icons/globe.svg) left center no-repeat;
+  background-size: 14px;
 }
 @keyframes showMenu {
   from {
