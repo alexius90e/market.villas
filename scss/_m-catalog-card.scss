@@ -296,10 +296,18 @@
 
     &_compare {
       background-image: url(../assets/icons/layers3d-wh.svg);
+
+      &.active {
+        background-image: url(../assets/icons/layers3d-active.svg);
+      }
     }
 
     &_favourites {
       background-image: url(../assets/icons/heart-wh.svg);
+
+      &.active {
+        background-image: url(../assets/icons/heart-active.svg);
+      }
     }
 
     &_delete {

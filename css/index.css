@@ -480,8 +480,14 @@ ul {
 .catalog-card__control_compare {
   background-image: url(../assets/icons/layers3d-wh.svg);
 }
+.catalog-card__control_compare.active {
+  background-image: url(../assets/icons/layers3d-active.svg);
+}
 .catalog-card__control_favourites {
   background-image: url(../assets/icons/heart-wh.svg);
+}
+.catalog-card__control_favourites.active {
+  background-image: url(../assets/icons/heart-active.svg);
 }
 .catalog-card__control_delete {
   background-image: url(../assets/icons/xmark-wh.svg);

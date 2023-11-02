@@ -20,3 +20,19 @@ catalogSliders.forEach((slider) => {
     },
   });
 });
+
+const catalogCards = document.querySelectorAll('.catalog-card');
+
+catalogCards.forEach((card) => {
+  card.addEventListener('click', (event) => {
+    const isCompareBtn = event.target.classList.contains('catalog-card__control_compare');
+    const isFavoritesBtn = event.target.classList.contains('catalog-card__control_favourites');
+
+    if (isCompareBtn || isFavoritesBtn) event.target.classList.toggle('active');
+  });
+});
+
+// const isCompareBtn = event.target.classList.contains('catalog-card__control_compare');
+// const isFavoritesBtn = event.target.classList.contains('catalog-card__control_favourites');
+
+// if (isCompareBtn || isFavoritesBtn) event.target.classList.toggle('active');
